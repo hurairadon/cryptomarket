@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryptoMarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="logo">CryptoMarket</h1>
+      <input
+        id="search-input"
+        class="search"
+        type="search"
+        placeholder="Search by name or symbol"
+        aria-label="Search cryptocurrencies"
+        autocomplete="off"
+      />
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="status-row">
+      <h2 id="list-title" class="list-title">Top cryptocurrencies by market cap</h2>
+      <span id="last-updated" class="last-updated"></span>
+    </div>
+
+    <!-- Error message (hidden until needed) -->
+    <div id="error-box" class="error-box" role="alert" hidden>
+      <span id="error-text"></span>
+      <button id="retry-button" class="button" type="button">Try again</button>
+    </div>
+
+    <!-- Loading indicator (hidden until needed) -->
+    <div id="loading" class="loading" hidden>
+      <div class="spinner"></div>
+      <span>Loading market data…</span>
+    </div>
+
+    <!-- Empty search result message -->
+    <p id="empty-message" class="empty-message" hidden>No cryptocurrencies match your search.</p>
+
+    <div id="table-wrapper" class="table-wrapper" hidden>
+      <table class="coin-table">
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th class="num">Price</th>
+            <th class="num">24h change</th>
+            <th class="num">Market cap</th>
+            <th class="num">24h volume</th>
+          </tr>
+        </thead>
+        <tbody id="coin-list"></tbody>
+      </table>
+    </div>
+
+    <nav id="pagination" class="pagination" aria-label="Pagination" hidden>
+      <button id="prev-button" class="button" type="button">Previous</button>
+      <span id="page-info" class="page-info"></span>
+      <button id="next-button" class="button" type="button">Next</button>
+    </nav>
+  </main>
+
+  <footer class="footer container">
+    Data from CoinGecko. Updates every 60 seconds.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
