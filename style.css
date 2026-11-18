@@ -379,3 +379,140 @@ body::before {
   opacity: 0.05
   z-index: -1;
 }
+
+/* =================================
+   GOTHAM CITY BACKGROUND
+================================= */
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #02040b;
+    background-image: url("gotham-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main dashboard */
+.app {
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(2, 5, 15, 0.94);
+    border-right: 1px solid #252b45;
+}
+
+/* Top navigation */
+.topbar {
+    background: rgba(3, 7, 20, 0.75);
+    border-bottom: 1px solid #252b45;
+    padding: 20px;
+}
+
+/* Hero section */
+.hero {
+    background: rgba(4, 9, 25, 0.72);
+    border: 1px solid #5140a0;
+    border-radius: 14px;
+    padding: 35px;
+}
+
+/* Market cards */
+.stat-card {
+    background: rgba(3, 8, 22, 0.88);
+    border: 1px solid #303b60;
+    border-radius: 12px;
+    padding: 22px;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: #8b5cf6;
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+}
+
+/* Main panels */
+.panel {
+    background: rgba(3, 7, 20, 0.90);
+    border: 1px solid #303b60;
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 25px;
+}
+
+/* Purple and cyan highlights */
+.hero h2 span {
+    color: #a855f7;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+/* Batman-inspired logo */
+.bat-logo {
+    font-size: 38px;
+    filter: drop-shadow(0 0 10px #8b5cf6);
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Footer */
+footer {
+    background: rgba(2, 5, 15, 0.92);
+    border-top: 1px solid #303b60;
+    padding: 22px;
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
+/* final - gotham + batman*/
+body {
+  background-image: url('gotham-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 350px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Batman_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.45;
+  z-index: -1;
+}
+main, .container, table {
+  background: rgba(5, 5, 5, 0.60); !important;
+}
