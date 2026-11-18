@@ -74,3 +74,226 @@
   <script src="script.js"></script>
 </body>
 </html>
+…
+This is your CryptoMarket index.html file. The HTML structure looks correct.
+
+For your Batman-style crypto dashboard, we'll upgrade it with:
+
+Dark Batman-inspired interface.
+
+Live Bitcoin and Ethereum prices.
+
+Interactive price charts.
+
+Top gainers and losers.
+
+Search and pagination.
+
+Automatic market updates.
+
+Next step: Save this code in VS Code as index.html.
+
+Do you want me to give you the upgraded Batman-style index.html code now, replacing this entire file?
+
+YES
+Replace your entire existing index.html with this upgraded version. This creates the foundation for a Batman-inspired CryptoMarket dashboard.
+
+Batman UI Responsive
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoMarket | Dark Knight Terminal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="bat-logo">🦇</div>
+      <div>
+        <h2>CRYPTO<span>MARKET</span></h2>
+        <small>THE DARK TERMINAL</small>
+      </div>
+    </div>
+
+    <nav class="navigation">
+      <a class="active" href="#">◈ Dashboard</a>
+      <a href="#markets">◈ Markets</a>
+      <a href="#charts">◈ Live Charts</a>
+      <a href="#movers">◈ Top Movers</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="system-status">
+        <span class="live-dot"></span>
+        SYSTEM ONLINE
+      </div>
+      <small>CRYPTO INTELLIGENCE v1.0</small>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">GOTHAM FINANCIAL NETWORK</p>
+        <h1>MARKET OVERVIEW</h1>
+      </div>
+
+      <div class="top-right">
+        <div class="live-indicator">
+          <span class="live-dot"></span> LIVE MARKET
+        </div>
+        <div class="clock" id="clock">--:--:--</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">WELCOME TO THE DARK SIDE OF FINANCE</p>
+        <h2>CONTROL THE <span>MARKET.</span></h2>
+        <p>Real-time cryptocurrency intelligence at your fingertips.</p>
+      </div>
+      <div class="hero-symbol">🦇</div>
+    </section>
+
+    <section class="stats-grid">
+
+      <div class="stat-card">
+        <p>BITCOIN</p>
+        <h2 id="btc-price">Loading...</h2>
+        <span id="btc-change">BTC / USD</span>
+      </div>
+
+      <div class="stat-card">
+        <p>ETHEREUM</p>
+        <h2 id="eth-price">Loading...</h2>
+        <span id="eth-change">ETH / USD</span>
+      </div>
+
+      <div class="stat-card">
+        <p>GLOBAL MARKET CAP</p>
+        <h2 id="global-cap">Loading...</h2>
+        <span>GLOBAL CRYPTO VALUE</span>
+      </div>
+
+      <div class="stat-card">
+        <p>BTC DOMINANCE</p>
+        <h2 id="btc-dominance">Loading...</h2>
+        <span>BITCOIN MARKET SHARE</span>
+      </div>
+
+    </section>
+
+    <section class="panel" id="charts">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MARKET INTELLIGENCE</p>
+          <h2>MARKET WATCHLIST</h2>
+        </div>
+
+        <input
+          id="search-input"
+          class="search"
+          type="search"
+          placeholder="Search crypto..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div id="loading" class="loading">
+        Establishing market connection...
+      </div>
+
+      <div id="error-box" class="error-box" hidden>
+        <span id="error-text"></span>
+        <button id="retry-button" class="button">RETRY</button>
+      </div>
+
+      <p id="empty-message" hidden>No matching cryptocurrencies found.</p>
+
+      <div id="table-wrapper" class="table-wrapper" hidden>
+        <table class="coin-table" id="markets">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>ASSET</th>
+              <th>PRICE</th>
+              <th>24H CHANGE</th>
+              <th>MARKET CAP</th>
+              <th>VOLUME</th>
+            </tr>
+          </thead>
+          <tbody id="coin-list"></tbody>
+        </table>
+      </div>
+
+      <nav id="pagination" class="pagination" hidden>
+        <button id="prev-button" class="button">PREVIOUS</button>
+        <span id="page-info"></span>
+        <button id="next-button" class="button">NEXT</button>
+      </nav>
+    </section>
+
+    <section class="movers-grid" id="movers">
+
+      <div class="panel">
+        <p class="eyebrow">MARKET OPPORTUNITIES</p>
+        <h2>TOP GAINERS</h2>
+        <div id="gainers-list">Loading market data...</div>
+      </div>
+
+      <div class="panel">
+        <p class="eyebrow">MARKET DECLINERS</p>
+        <h2>TOP LOSERS</h2>
+        <div id="losers-list">Loading market data...</div>
+      </div>
+
+    </section>
+
+    <footer>
+      <span>🦇 CRYPTOMARKET</span>
+      <span>POWERED BY COINGECKO API</span>
+      <span>THE DARK KNIGHT TERMINAL © 2026</span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+Now do this
+Open VS Code.
+
+Open index.html.
+
+Press Ctrl + A.
+
+Delete the old code.
+
+Paste this complete code.
+
+Press Ctrl + S.
+
+Important: This is the HTML foundation. Your style.css and script.js must also be upgraded to make the Batman design and live market features work.
+
+Next, we'll upgrade style.css and then script.js.
+
+
+
+
+
