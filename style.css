@@ -2,16 +2,16 @@
 
 /* ---------- Colors and basic settings ---------- */
 :root {
-  --bg: #0e1117;
-  --surface: #161b24;
-  --surface-hover: #1c2330;
-  --border: #262e3b;
-  --text: #e8ecf2;
-  --text-muted: #8b95a7;
-  --accent: #5b8def;
-  --accent-hover: #759fff;
-  --positive: #34c78a;
-  --negative: #f0626b;
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-hover: #1f1f1f;
+  --border: #2a2a2a;
+  --text: #f5f5f5;
+  --text-muted: #9a9a9a;
+  --accent: #ffd500;
+  --accent-hover: #ffea00;
+  --positive: #00ff88;
+  --negative: #ff2a2a;
 }
 
 * {
@@ -335,4 +335,26 @@ body {
   .spinner {
     animation-duration: 2s;
   }
+}
+/*BATMAN GOTHAM */
+body {
+  background: #0a0a0a !important;
+  background-image: radical-gradient(circle at the top)
+}
+.header {
+  border-bottom: 3px solid #ffd500 !important;
+  background: #000 !important;
+}
+.logo {
+  color: #ffd500 !important;
+  font-size: 28px;
+  font-weight: 900;
+    text-transform: uppercase;
+letter-spacing: 4px;
+text-shadow: 0 0 15x rgba(255, 213, 0, 0.7);
+}
+.logo span {
+  color: #ffffff !important;
+  font-size: 18px;
+  letter-spacing: 6px;
 }
